@@ -1,0 +1,108 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.about__paragraph {
+  font-size: var(--fs-md);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-8);
+}
+.about__paragraph strong {
+  color: var(--navy-900);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.about__commitments {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.about__commitments li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.about__commitments svg {
+  color: var(--success-600);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.about__leadership {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+}
+
+.about__leadership-label {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold-700);
+  margin-bottom: var(--space-6);
+}
+
+.about__leader-card {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.about__leader-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--navy-700), var(--navy-950));
+  color: var(--gold-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-md);
+}
+
+.about__leader-name {
+  font-size: var(--fs-md);
+  color: var(--navy-900);
+}
+
+.about__leader-role {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.about__leader-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--navy-900);
+}
+.about__leader-phone:hover {
+  color: var(--gold-700);
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+}

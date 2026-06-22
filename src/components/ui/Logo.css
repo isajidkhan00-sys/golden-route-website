@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.logo__wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--navy-900);
+  letter-spacing: -0.01em;
+}
+
+.logo__tagline {
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold-700);
+  margin-top: 2px;
+}
+
+.logo__wordmark--light .logo__name {
+  color: var(--white);
+}
+
+.logo__wordmark--light .logo__tagline {
+  color: var(--gold-300);
+}
+
+@media (max-width: 480px) {
+  .logo__tagline {
+    display: none;
+  }
+}

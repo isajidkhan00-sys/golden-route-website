@@ -1,0 +1,129 @@
+.contact {
+  background: var(--surface-raised);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.contact__details {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.contact__detail-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration-fast), transform var(--duration-fast);
+}
+.contact__detail-card:hover {
+  border-color: var(--gold-300);
+  transform: translateX(4px);
+}
+.contact__detail-card svg {
+  color: var(--gold-500);
+  flex-shrink: 0;
+}
+
+.contact__detail-label {
+  display: block;
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.contact__detail-value {
+  display: block;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+/* ---- Form ---- */
+.contact__form {
+  background: var(--navy-50);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.contact__form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact__field span {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.contact__field input,
+.contact__field select,
+.contact__field textarea {
+  padding: var(--space-3) var(--space-4);
+  border: 1.5px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--text-primary);
+  font-size: var(--fs-sm);
+  transition: border-color var(--duration-fast);
+  resize: vertical;
+}
+
+.contact__field input:focus,
+.contact__field select:focus,
+.contact__field textarea:focus {
+  border-color: var(--gold-500);
+  outline: none;
+}
+
+.contact__submit {
+  margin-top: var(--space-2);
+  width: 100%;
+}
+
+.contact__success {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--success-600);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+}
+
+@media (max-width: 560px) {
+  .contact__form-row {
+    grid-template-columns: 1fr;
+  }
+  .contact__form {
+    padding: var(--space-6);
+  }
+}
