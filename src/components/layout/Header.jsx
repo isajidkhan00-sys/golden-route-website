@@ -11,6 +11,7 @@ import { siteConfig } from '../../data/siteConfig';
 
 const NAV_LINKS = [
   { label: 'Services', href: '#services' },
+  { label: 'Workforce', href: '#workforce' },
   { label: 'How It Works', href: '#process' },
   { label: 'About', href: '#about' },
   { label: 'FAQ', href: '#faq' },
