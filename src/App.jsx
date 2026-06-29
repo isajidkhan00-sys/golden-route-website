@@ -7,6 +7,7 @@ import CTABanner from './components/sections/CTABanner';
 import About from './components/sections/About';
 import FAQ from './components/sections/FAQ';
 import Contact from './components/sections/Contact';
+import FloatingWhatsApp from './components/ui/FloatingWhatsApp';
 
 // ==========================================================================
 // APP — page assembly. This is the ONLY file you need to touch to add,
@@ -34,6 +35,8 @@ function App() {
       </main>
 
       <Footer />
+
+      <FloatingWhatsApp />
     </>
   );
 }

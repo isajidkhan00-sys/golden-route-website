@@ -10,12 +10,11 @@ export const siteConfig = {
   licenseLabel: 'Licensed by Govt. of Pakistan',
 
   contact: {
-    email: 'goldenrouteoep@gmail.com',
+    email: 'cv@goldenrouteoep.com',
     website: 'www.goldenroute.com',
     address: 'Main Murree Road, Bhara Kahu, Islamabad, Pakistan',
     phones: [
       { name: 'Muhammad Asif', role: 'Managing Director', number: '+92 306 6050645' },
-      { name: 'Office Line', role: 'General Inquiries', number: '+92 302 6050645' },
     ],
   },
 

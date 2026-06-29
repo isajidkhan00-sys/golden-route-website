@@ -4,6 +4,12 @@
   gap: var(--space-3);
 }
 
+.logo__mark {
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .logo__wordmark {
   display: flex;
   flex-direction: column;
